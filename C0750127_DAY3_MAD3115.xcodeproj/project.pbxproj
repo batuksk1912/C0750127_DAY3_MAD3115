@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		04F7F6DA22308BD200D4A43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6D922308BD200D4A43E /* AppDelegate.swift */; };
-		04F7F6DC22308BD200D4A43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6DB22308BD200D4A43E /* ViewController.swift */; };
 		04F7F6DF22308BD200D4A43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7F6DD22308BD200D4A43E /* Main.storyboard */; };
 		04F7F6E122308BD300D4A43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F7F6E022308BD300D4A43E /* Assets.xcassets */; };
 		04F7F6E422308BD300D4A43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7F6E222308BD300D4A43E /* LaunchScreen.storyboard */; };
+		04F7F6EC22308BF800D4A43E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6EB22308BF800D4A43E /* LoginViewController.swift */; };
+		04F7F6EE22308C3600D4A43E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6ED22308C3600D4A43E /* HomeViewController.swift */; };
+		04F7F6F02230A0AB00D4A43E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6EF2230A0AB00D4A43E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F7F6D622308BD200D4A43E /* C0750127_DAY3_MAD3115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0750127_DAY3_MAD3115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7F6D922308BD200D4A43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04F7F6DB22308BD200D4A43E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04F7F6DE22308BD200D4A43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F7F6E022308BD300D4A43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F7F6E322308BD300D4A43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F7F6E522308BD300D4A43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F7F6EB22308BF800D4A43E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04F7F6ED22308C3600D4A43E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04F7F6EF2230A0AB00D4A43E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				04F7F6D922308BD200D4A43E /* AppDelegate.swift */,
-				04F7F6DB22308BD200D4A43E /* ViewController.swift */,
 				04F7F6DD22308BD200D4A43E /* Main.storyboard */,
 				04F7F6E022308BD300D4A43E /* Assets.xcassets */,
 				04F7F6E222308BD300D4A43E /* LaunchScreen.storyboard */,
 				04F7F6E522308BD300D4A43E /* Info.plist */,
+				04F7F6EB22308BF800D4A43E /* LoginViewController.swift */,
+				04F7F6ED22308C3600D4A43E /* HomeViewController.swift */,
+				04F7F6EF2230A0AB00D4A43E /* MainViewController.swift */,
 			);
 			path = C0750127_DAY3_MAD3115;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F7F6DC22308BD200D4A43E /* ViewController.swift in Sources */,
+				04F7F6EC22308BF800D4A43E /* LoginViewController.swift in Sources */,
 				04F7F6DA22308BD200D4A43E /* AppDelegate.swift in Sources */,
+				04F7F6EE22308C3600D4A43E /* HomeViewController.swift in Sources */,
+				04F7F6F02230A0AB00D4A43E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
