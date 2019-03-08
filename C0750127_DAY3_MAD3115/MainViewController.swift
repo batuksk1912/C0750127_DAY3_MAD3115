@@ -10,6 +10,32 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var lblAnimalName: UILabel!
+    @IBOutlet var progressBar: UIView!
+    
+    @IBAction func stpAnimal(_ sender: UIStepper) {
+        lblAnimalName.text = String(sender.value)
+    }
+    
+    @IBAction func sldAnimal(_ sender: UISlider) {
+        lblAnimalName.text = String(sender.value)
+        
+    }
+    @IBOutlet weak var imgAnimal: UIImageView!
+    @IBAction func segmentAnimal(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            lblAnimalName.text = "franco"
+            imgAnimal.image = UIImage(named:"animal1.jpg")
+        case 1:
+            lblAnimalName.text = "mussolini"
+            imgAnimal.image = UIImage(named:"animal2.jpg")
+        default:
+            print("Nothing")
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

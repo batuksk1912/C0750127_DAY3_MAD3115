@@ -25,7 +25,16 @@ class HomeViewController: UIViewController {
         self.navigationController?.hidesBarsOnTap = true
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.backgroundColor = UIColor.blue
+        
+        let userDefault = UserDefaults.standard
+        if let userMail = userDefault.string(forKey: "userName") {
+            print(userMail)
 
+        }
+        if let password = userDefault.string(forKey: "userPassword") {
+            print(password)
+        }
+        
         // Do any additional setup after loading the view.
     }
     

@@ -19,7 +19,14 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "userName") {
+            txtUserName.text = email
+        }
+        if let psw = userDefault.string(forKey: "userPassword") {
+            txtPassword.text = psw
+            swRememberMe.isOn = true
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -30,8 +37,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnLogin(_ sender: UIButton) {
         if (txtUserName.text == username && txtPassword.text == password) {
+            let userDefault = UserDefaults.standard
             if (swRememberMe.isOn) {
-                print("save")
+                userDefault.set(username, forKey: "userName")
+                userDefault.set(password, forKey: "userPassword")
+                print("Write code to save")
+            } else {
+                print("Remove all info")
+                userDefault.removeObject(forKey: "userName")
+                userDefault.removeObject(forKey: "userPassword")
             }
             print("Logged In")
             let sb = UIStoryboard(name: "Main", bundle: nil)
